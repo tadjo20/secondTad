@@ -1,0 +1,194 @@
+
+<head>
+    <link href="bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <!--<link rel="stylesheet" href="main.css" type="text/css">-->
+</head>
+<body>
+    {{> navigation}}
+    {{> Template.dynamic template=template_name }}
+</body>
+
+<template name="personalTemplate">
+<div class="jumbotron">
+    <div class="headShot">
+        <img id="ZHeadShot" src="/zobieeeee.jpg">
+        <div class="personalText">
+            <h1>WOOF!!!</h1>
+            <p>Hi! My name is Zobie. ya I might be a dog but that doesnt mean there isnt a place for a dog like me in the hole wag world. </p>
+            <p> A little about me. Well in short I'm a dog. I like long walks where I try and pull my play things arms out of his sockets.</p>
+            <p>I also hate the vacuum and anytime my play thing tries to dress me up...</p>
+
+        </div>
+    </div>
+</div>
+{{> askThePup}}
+</template>
+
+
+<template name="askThePup">
+    <div id="aThePup">
+    <div class="container">
+        <!--<header>Ask the Pup!</header>-->
+        <h2>Go right ahead, ask the pup anything you want.</h2>
+        <!--<p>Keep in mind, the pup is a pup and with answer as such.</p>-->
+        <form class="new-resolution">
+            <textarea type="text" class="bodyInput" name="title" placeholder="Title" maxlength="60"></textarea><br>
+            <textarea  type="text" class="bodyInput" name="body" placeholder="Question" maxlength="300" ></textarea>
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            {{#each resolutions}}
+                {{> resolution}}
+            {{/each}}
+        </ul>
+        <ul>
+            {{#each resolutions2}}
+                {{> resolution_preLog}}
+            {{/each}}
+        </ul>
+        <ul>
+            {{#each resolutions3}}
+                {{> resolution_Super}}
+            {{/each}}
+        </ul>
+    </div>
+    </div>
+</template>
+
+
+<template name="resolution">
+    <li><h1>{{Title}}</h1> <p>{{Body}}</p><h2>{{zobieIntro}}</h2><p>{{zobieBodie}}</p> {{#if currentUser}} <button class="delete">Delete</button> {{/if}} </li>
+</template>
+
+<template name="resolution_preLog">
+    <li><h1>{{Title}}</h1> <p>{{Body}}</p><h2>{{zobieIntro}}</h2><p>{{zobieBodie}}</p></li>
+</template>
+
+<template name="resolution_Super">
+    <li><h1>{{Title}}</h1>
+        <!--<button class="edit">Edit</button> -->
+     <p>{{Body}}</p><h2>{{zobieIntro}}</h2><p>{{zobieBodie}}</p>  {{#if currentUser}} <button class="delete">Delete</button>{{/if}} </li>
+    <form class="super-resolution">
+        <input type="text" name="title"  value="{{Title}}">
+        <input type="text" name="body" value="{{Body}}">
+        <input type="text" name="ztitle"  value="{{zobieIntro}}">
+        <input type="text" name="zbody" value="{{zobieBodie}}">
+        <input type="submit" value="Submit">
+    </form>
+</template>
+
+
+<template name="navigation">
+    <div class="nav">
+        <div class="container">
+            <ul class="pull-left">
+                <li><a class="navBtn" >Personal</a></li>
+                <li><a class="navBtn" >Projects</a></li>
+            </ul>
+            <ul class="pull-right">
+                <!--<li><a href="links.html"  onclick="clickIt()">Links</a></li>-->
+                <!--<li><a href="photos.html"onclick="clickIt()">Photos</a></li>-->
+                <li><a class="navBtn" >Home</a></li>
+                <!--<li><button class="home" >Home</button></li>-->
+                <li><a href="https://sso.secureserver.net/?realm=pass&app=email&preview=1">Web Mail Log in</a> {{> loginButtons align= right}}</li>
+            </ul>
+        </div>
+    </div>
+
+</template>
+
+<template name="homeTemplate">
+
+    <div class="jumbotron">
+    <div class="container">
+    <h1>Dev on the run...</h1>
+    <p>Hacking hackie projects so you dont have to!</p>
+    <!--<a href="#">Learn More</a>-->
+    </div>
+    </div>
+
+    <div class="learn-more">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-4">
+    <h3>Travel</h3>
+    <p>Locations you will love, you know so you love home a little less and want to travel even more.</p>
+
+    </div>
+    <div class="col-md-4">
+    <h3>Autos</h3>
+    <p>Fixing what you can so you dont have to pay the man.</p>
+
+    </div>
+    <div class="col-md-4">
+    <h3>Games and Puzzles</h3>
+    <p>Stuff to distract you from all the other distracting stuff.</p>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+</template>
+
+
+
+<template name="projectTemplate">
+
+    <div id="projects">
+
+        <div class="projectText">
+            <h1>MR2, the joy the pain!!</h1>
+            <p>After haring a slight screech getting onto the freeway the mr2 would not build boost! </p>
+            <p> I had been in the process of swapping out the waste gate actuator. So at first I suspected the actuator.</p>
+            <p>Had become disconnected. After further investigation I found that my ct20b turbo had finally failed.</p>
+            <p>Amazingly I had actually gotten lucky. Only the hot side of the turbo had failed. </p>
+            <p>So no shards of metal were ingested by the engine. Time to replace it!</p>
+        </div>
+
+        <div class="fwell" id="mr2Well">
+            <h1> Oh mr2, I love you so!</h1>
+            <p> But sometimes you cause me a lot of work...</p>
+            <img src="/mr2/V__D9F0.jpg">
+            <!--<a type="img" href="photo/mr2/V__D9F0.jpg"></a>-->
+            <p> Fun times were had by all.</p>
+
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="/mr2/WP_20151019_17_22_49_Pro.jpg" alt="Man">
+                </div>
+
+                <div class="item">
+                    <img src="/mr2/WP_20151023_07_46_43_Pro.jpg" alt="Mr2">
+                </div>
+
+                <div class="item">
+                    <img src="/mr2/WP_20151107_001.jpg" alt="Chill">
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="fwell" >
+            <h1> Thanks for the memories</h1>
+            <p> All good things come to an end, for better for worse</p>
+
+            <img src="/mr2/WP_20150815_20_02_43_Pro.jpg" alt="Engine">
+            <img src="/mr2/WP_20150817_19_05_12_Pro.jpg" alt="Engine">
+
+            <p> Well maybe just MORE POWER!!!</p>
+
+            <div class="item">
+                <img src="/mr2/WP_20151020_15_09_47_Pro.jpg" alt="Engine">
+            </div>
+
+
+
+        </div></div>
+
+</template>

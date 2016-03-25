@@ -1,0 +1,175 @@
+.nav a {
+    color: #5a5a5a;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+}
+
+.nav li {
+    display: inline;
+}
+.active{
+    color: red!important;
+    text-underline-color: red!important;
+}
+
+.jumbotron {
+    background-image:url("/1272648_10151799023534280_349037227_o.jpg");
+    /*background-image:url("/DSC_0931%20(2)%20Full.jpg");*/
+    height: 600px;
+    max-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: start;
+
+}
+.Projecttron {
+    /*background-image:url("/1272648_10151799023534280_349037227_o.jpg");*/
+    background-image:url("/DSC_0931%20(2)%20Full.jpg");
+    height: 600px;
+    max-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: start;
+
+}
+
+.jumbotron .container {
+    position: relative;
+    top:100px;
+}
+
+.jumbotron h1 {
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Shift', sans-serif;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.learn-more {
+    background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+    font-family: 'Shift', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.learn-more a {
+    color: #00b0ff;
+}
+.headShot{
+
+    float: left;
+    padding-left: 5%;
+
+}
+#ZHeadShot{
+    /*height: 90%;*/
+    max-height: 400px;
+    border-radius: 40%;
+}
+#personal{
+    background-color: #a8bbcd;
+}
+.personalText{
+    float: right;
+    padding-left: 10px;
+}
+#projects{
+    background-color: #718294;
+    background-image:url("/DSC_0931%20(2)%20Full.jpg");
+    /*max-width: 99%;*/
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.fwell{
+    /*height: 30%;*/
+    max-width: 25%;
+    padding: 2%;
+    margin: 2%;
+    background-color: #5a5a5a;
+}
+/*#mr2Well{*/
+/*background-color: #5a5a5a;*/
+/*}*/
+.fwell p{
+    color: crimson;
+    font-size: large;
+    padding: 5px;
+}
+.fwell img{
+    max-width: 90%;font-size: large;
+    padding: 3px;
+}
+.projectText
+{
+    background-color: #195574;
+    color: #b6664d;
+    padding: 2%;
+    margin: 1%;
+    float: right;
+
+}
+.projectText p{
+    font-size: large;
+}/* CSS declarations go here */
+#aThePup ul{
+    margin-bottom: 20px;
+    padding-top: 20px;
+    /*padding-bottom: 20px;*/
+    list-style-image: none;
+    list-style: none;
+    /*background-color: teal;*/
+}
+#aThePup li{
+    padding-top: 20px;
+    /*padding-bottom: 20px;*/
+    margin: 20px;
+    background-color: #718294;
+    max-width: 70%;
+    padding: 4%;
+    border-radius: 10%;
+}
+#aThePup p{
+     background-color: #d1e2f4;
+    border-radius: 25px;
+     padding: 2%;
+     margin: 2%;
+    word-break: break-all;
+    word-wrap: break-word;
+ }
+#aThePup h1{
+    background-color: white;
+    border-radius: 25px;
+    padding: 2%;
+    margin: 2%;
+}
+.bodyInput{
+    /*min-height: 200px;*/
+
+font-family: "Montserrat", sans-serif;
+       width: 30em;
+    height: 4em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.5em;
+    background-color: #efefef;
+    padding: 0em 1em;
+    font-size: 1.2em;
+    box-shadow: 0em 0.1em 0.5em #ccc;
+    margin: 15px;
+
+
+}
+.delete{
+    background-color: red;
+    border-color: #e10000;
+    text-shadow : 0 0 1px black;
+}

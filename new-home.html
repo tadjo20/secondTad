@@ -1,0 +1,89 @@
+<!--<head>-->
+  <!--&lt;!&ndash;<title>new-home</title>&ndash;&gt;-->
+<!--</head>-->
+
+<!--<body>-->
+  <!--&lt;!&ndash;<h1>Welcome to Meteor!</h1>&ndash;&gt;-->
+
+
+<!--{{#if currentUser}}-->
+  <!--<h1>Logged in!!!</h1>-->
+<!--{{/if}}-->
+
+
+  <!--{{> loginButtons}}-->
+<!--{{> askThePup}}-->
+
+  <!--&lt;!&ndash;{{> Template.dynamic template=askThePup }}&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;{{#each frontScreens}}&ndash;&gt;-->
+    <!--&lt;!&ndash;{{> frontScreen}}&ndash;&gt;-->
+  <!--&lt;!&ndash;{{/each}}&ndash;&gt;-->
+  <!--&lt;!&ndash;<div id="test" class="test">{{> frontScreen}} Font screen</div>&ndash;&gt;-->
+
+  <!--&lt;!&ndash;<div>WH  {{> task}}</div>&ndash;&gt;-->
+
+
+  <!--&lt;!&ndash;<ul>wh2&ndash;&gt;-->
+      <!--&lt;!&ndash;{{#each tasks}}&ndash;&gt;-->
+          <!--&lt;!&ndash;{{> task}}&ndash;&gt;-->
+      <!--&lt;!&ndash;{{/each}}&ndash;&gt;-->
+  <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+
+<!--</body>-->
+<!--<template name="askThePup">-->
+    <!--<div class="container">-->
+        <!--<header>Ask the Pup!</header>-->
+        <!--<form class="new-resolution">-->
+            <!--<input type="text" name="title" placeholder="Title">-->
+            <!--<input type="text" name="body" placeholder="Question">-->
+            <!--<input type="submit" value="Submit">-->
+        <!--</form>-->
+        <!--<ul>-->
+            <!--{{#each resolutions}}-->
+            <!--{{> resolution}}-->
+            <!--{{/each}}-->
+        <!--</ul>-->
+
+        <!--<ul>-->
+            <!--{{#each resolutions2}}-->
+            <!--{{> resolution_preLog}}-->
+            <!--{{/each}}-->
+        <!--</ul>-->
+        <!--<ul>-->
+            <!--{{#each resolutions3}}-->
+            <!--{{> resolution_Super}}-->
+            <!--{{/each}}-->
+        <!--</ul>-->
+
+    <!--</div>-->
+<!--</template>-->
+
+
+<!--<template name="resolution">-->
+        <!--<li><h1>{{Title}}</h1> {{#if currentUser}} <button class="delete">Delete</button> {{/if}} <p>{{Body}}</p><h2>{{zobieIntro}}</h2><p>{{zobieBodie}}</p></li>-->
+<!--</template>-->
+
+<!--<template name="resolution_preLog">-->
+    <!--<li><h1>{{Title}}</h1> <p>{{Body}}</p><h2>{{zobieIntro}}</h2><p>{{zobieBodie}}</p></li>-->
+<!--</template>-->
+
+<!--<template name="resolution_Super">-->
+    <!--<li><h1>{{Title}}</h1> {{#if currentUser}} <button class="delete">Delete</button> <button class="edit">Edit</button> {{/if}} <p>{{Body}}</p><h2>{{zobieIntro}}</h2><p>{{zobieBodie}}</p></li>-->
+    <!--<form class="super-resolution">-->
+    <!--<input type="text" name="title"  value="{{Title}}">-->
+    <!--<input type="text" name="body" value="{{Body}}">-->
+        <!--<input type="text" name="ztitle"  value="{{zobieIntro}}">-->
+        <!--<input type="text" name="zbody" value="{{zobieBodie}}">-->
+    <!--<input type="submit" value="Submit">-->
+<!--</form>-->
+<!--</template>-->
+
+
+<!--<template name="frontScreen"><p>WorkHorse</p> {{workHorse}}</template>-->
+
+<!--<template name="task">-->
+    <!--<p>{{text}}</p>-->
+<!--</template>-->
